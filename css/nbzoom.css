@@ -1,0 +1,99 @@
+/* ---------------------------- *\
+	MAIN STYLES
+\* ---------------------------- */
+body{
+	background: #000;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+
+
+
+/* ---------------------------- *\
+	NOOBZOOM
+\* ---------------------------- */
+
+.nbzoom {
+  position: absolute;
+  z-index: 996;
+}
+
+	.nbzoom .nbzoom-close {
+	  opacity: 0;
+	}
+
+	.nbzoom .img-current {
+	  position: absolute;
+	  z-index: 997;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  margin: auto;
+	}
+
+	.nbzoom.is-active {
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(255, 255, 255, .8);
+	}
+
+	.nbzoom.is-active .nbzoom-close {
+	  position: absolute;
+	  z-index: 998;
+	  right: 0;
+	  top: 0;
+	  display: block;
+	  border: 0;
+	  padding: 0;
+	  margin: 0;
+	  width: 50px;
+	  height: 50px;
+	  background: #000;
+	  text-align: center;
+	  opacity: 1;
+	}
+
+	.nbzoom.is-active .nbzoom-close::before {
+	  content: 'X';
+	  position: absolute;
+	  top: 9px;
+	  left: 18px;
+	  z-index: 999;
+	  color: #fff;
+	  font-size: 30px;
+	  font-weight: 700;
+	}
+
+
+
+
+
+/* ---------------------------- *\
+	BOX WITH THE GALERY
+\* ---------------------------- */
+
+.box-lookbook{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	max-height: 350px;
+	overflow: hidden;
+}	
+
+.lookbook-picture{
+	width: 270px;
+	float: left;
+	margin: 0 20px;
+	display: block;
+}
+
+.lookbook-picture img{
+	width: 100%;
+	display: block;
+}
